@@ -20,4 +20,18 @@ document.getElementById(
 "popup"
 ).style.display = "none";
 
+
+
 }
+
+
+
+
+
+document.addEventListener("click", function () {
+    const music = document.getElementById("music");
+
+    if (music.paused) {
+        music.play();
+    }
+}, { once: true });

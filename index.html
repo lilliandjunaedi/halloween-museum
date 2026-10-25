@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Samhain Museum</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="overlay">
+
+<h1>Samhain Museum of the Otherworld</h1>
+
+<p>
+Ancient Celtic traditions held that Samhain was a unique period when the boundary
+between the living and the Otherworld became less distinct.
+</p>
+
+<p>
+Click an exhibit to learn more.
+</p>
+
+</div>
+
+<audio autoplay loop>
+<source src="audio/halloween-ambient.mp3" type="audio/mpeg">
+</audio>
+
+<div class="museum">
+
+<div class="card"
+onclick="showInfo(
+'Púca',
+'A shapeshifting spirit associated with Samhain. The Púca could appear as a horse, goat, dog, cat, or even a human.'
+)">
+<img src="images/puca.jpg">
+<h3>Púca</h3>
+</div>
+
+<div class="card"
+onclick="showInfo(
+'Banshee',
+'A supernatural spirit whose mournful cry foretells death.'
+)">
+<img src="images/banshee.jpg">
+<h3>Banshee</h3>
+</div>
+
+<div class="card"
+onclick="showInfo(
+'Dullahan',
+'Irelands legendary headless horseman who rides a black horse carrying his severed head.'
+)">
+<img src="images/dullahan.jpg">
+<h3>Dullahan</h3>
+</div>
+
+<div class="card"
+onclick="showInfo(
+'Aos Sí',
+'Powerful supernatural beings linked to ancient Irish gods.'
+)">
+<img src="images/aossi.jpg">
+<h3>Aos Sí</h3>
+</div>
+
+<div class="card"
+onclick="showInfo(
+'Sluagh',
+'A roaming host of restless spirits believed to cross the night sky during Samhain.'
+)">
+<img src="images/sluagh.jpg">
+<h3>Sluagh</h3>
+</div>
+
+<div class="card"
+onclick="showInfo(
+'Each-Uisce',
+'A dangerous supernatural water horse associated with lakes and rivers.'
+)">
+<img src="images/eachuisce.jpg">
+<h3>Each-Uisce</h3>
+</div>
+
+<div class="card"
+onclick="showInfo(
+'Lady Gwyn',
+'A spectral white figure associated with Samhain folklore.'
+)">
+<img src="images/ladygwyn.jpg">
+<h3>Lady Gwyn</h3>
+</div>
+
+</div>
+
+<div id="popup">
+
+<h2 id="popupTitle"></h2>
+
+<p id="popupText"></p>
+
+<button onclick="closePopup()">
+Close
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

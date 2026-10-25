@@ -20,14 +20,6 @@ document.getElementById(
 "popup"
 ).style.display = "none";
 
-
-
-}
-
-
-
-
-
 document.addEventListener("click", function () {
     const music = document.getElementById("music");
 
@@ -35,3 +27,11 @@ document.addEventListener("click", function () {
         music.play();
     }
 }, { once: true });
+
+}
+
+
+
+
+
+
